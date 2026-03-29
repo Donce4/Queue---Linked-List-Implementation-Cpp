@@ -8,3 +8,14 @@ demo: demo.cpp queue.o
 
 test: test.cpp queue.o
 	g++ -std=c++11 test.cpp queue.o -o test
+
+run_demo: demo
+	./demo
+
+run_test: test
+	./test
+
+clean:
+	rm -f queue.o demo test log.txt
+
+rebuild: clean demo test
