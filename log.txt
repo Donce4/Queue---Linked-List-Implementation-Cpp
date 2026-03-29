@@ -1,0 +1,30 @@
+--- Starting Queue Diagnostic Tests ---
+
+[Phase 1: Basic Operations]
+Test [New queue is empty]: PASSED
+Test [Queue not empty after enqueues]: PASSED
+
+[Phase 2: Search by Value]
+Test [Find value 10 at index 0]: PASSED
+Test [Find value 30 at index 2]: PASSED
+Test [Exception thrown for missing value]: PASSED
+
+[Phase 3: Dequeue and Removal]
+Test [Dequeue returns front value (10)]: PASSED
+Test [Value 30 is now at index 0 after -= operator]: PASSED
+
+[Phase 4: Mathematical Operators]
+Test [Operator *= correctly multiplies elements]: PASSED
+
+[Phase 5: Copying and Comparisons]
+Test [Copied queue is equal (operator==)]: PASSED
+Test [Modified copy is not equal (operator!=)]: PASSED
+Test [Original queue is less than modified copy (operator<)]: PASSED
+
+[Phase 6: Object Cleaning]
+Test [Operator! successfully empties the queue]: PASSED
+
+[Phase 7: Underflow Handling]
+Test [Exception thrown on empty dequeue]: PASSED
+
+--- Diagnostic Tests Complete ---
