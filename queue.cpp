@@ -152,12 +152,28 @@ namespace MyDataStructure
         {
             std::stringstream ss;
             ss << "Queue: [";
+
             Node *curr = front;
-            while (curr)
+            int displayCount = 0;
+            const int MAX_DISPLAY = 5; // Top Key limit
+            
+            while (curr && displayCount < MAX_DISPLAY)
             {
-                ss << curr->data << (curr->next ? "," : "");
+                ss << curr->data;
                 curr = curr->next;
+                displayCount++;
+
+                if (curr && displayCount < MAX_DISPLAY)
+                {
+                    ss << ", ";
+                }
             }
+
+            if (curr)
+            {
+                ss << "...";
+            }
+
             ss << "] Node count: " << count;
             return ss.str();
         }

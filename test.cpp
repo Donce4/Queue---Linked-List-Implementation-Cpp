@@ -94,6 +94,9 @@ int main()
     }
     runTest(caughtUnderflow, "Exception thrown on empty dequeue", logFile);
 
+
+
+    
     logMessage("\n--- Diagnostic Tests Complete ---", logFile);
     logFile.close();
     return 0;

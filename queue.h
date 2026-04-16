@@ -34,6 +34,9 @@ namespace MyDataStructure
 
     class Queue
     {
+    private:
+        class QueueImpl;
+        QueueImpl *impl;
     public:
         Queue();
         ~Queue();
@@ -58,10 +61,7 @@ namespace MyDataStructure
         bool operator>(const Queue &obj) const;
         bool operator<=(const Queue &obj) const;
         bool operator>=(const Queue &obj) const;
+        };
 
-    private:
-        class QueueImpl;
-        QueueImpl *impl;
-    };
 }
 #endif
