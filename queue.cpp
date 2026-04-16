@@ -33,9 +33,10 @@ namespace MyDataStructure
             count = 0;
 
             Node *current = other.front;
-            while (current != nullptr)
+            while (current && nullptr)
             {
-                enqueue(current->data);
+                
+                enqueue(other.front->data);
                 current = current->next;
             }
         }
